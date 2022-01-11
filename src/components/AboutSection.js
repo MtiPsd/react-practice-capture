@@ -1,35 +1,42 @@
 import React from "react";
 import home1 from "../img/home1.jpg";
+//Framer Motion
+import { motion } from "framer-motion";
+import { titleAnim, fade, photoAnim } from "../animation";
+import Wave from "./Wave";
 
 const AboutSection = () => {
+  // Framer Motion
+
   return (
     <div className="about">
       <div className="discription">
         {/* title */}
-        <div className="title">
+        <motion.div className="title">
           <div className="hide">
-            <h2>ما در تلاشیم تا</h2>
+            <motion.h2 variants={titleAnim}>ما در تلاشیم تا</motion.h2>
           </div>
           <div className="hide">
-            <h2>
+            <motion.h2 variants={titleAnim}>
               <span>رویاهایتان</span> را
-            </h2>
+            </motion.h2>
           </div>
           <div className="hide">
-            <h2> حقیقت ببخشیم</h2>
+            <motion.h2 variants={titleAnim}> حقیقت ببخشیم</motion.h2>
           </div>
-        </div>
+        </motion.div>
         {/* title end */}
-        <p>
+        <motion.p variants={fade}>
           با ما در تماس باشید تا با به روز ترین و حرفه ای ترین ایده های طراحی
           روز دنیا آشنا شوید
-        </p>
-        <button>تماس با ما</button>
+        </motion.p>
+        <motion.button variants={fade}>تماس با ما</motion.button>
       </div>
       {/* About image */}
       <div className="image">
-        <img src={home1} alt="landing" />
+        <motion.img src={home1} alt="landing" variants={photoAnim} />
       </div>
+      <Wave />
     </div>
   );
 };

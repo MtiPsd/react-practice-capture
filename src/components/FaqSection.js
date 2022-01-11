@@ -1,49 +1,63 @@
 import React from "react";
+//Toggle
+import Toggle from "../components/Toggle";
+//Animate
+import { AnimateSharedLayout, motion } from "framer-motion";
+import { scrollReveal } from "../animation";
+import { useScroll } from "./UseScroll";
 
 const FaqSection = () => {
+  //useScroll
+  const [element, controls] = useScroll();
+
   return (
-    <div className="faq">
+    <motion.div
+      className="faq"
+      variants={scrollReveal}
+      ref={element}
+      animate={controls}
+      initial="hidden"
+    >
       <h2>سوالی دارید؟</h2>
-      {/* single question */}
-      <div className="question">
-        <h4>چگونه شروع کنم؟</h4>
-        <div className="answer">
-          <p>لورم ایپسوم متن ساختگی با</p>
-          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</p>
-        </div>
-      </div>
-      {/* single question end */}
-      <div className="faq-line"></div>
-      {/* single question */}
-      <div className="question">
-        <h4>برنامه روزانه</h4>
-        <div className="answer">
-          <p>لورم ایپسوم متن ساختگی با</p>
-          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</p>
-        </div>
-      </div>
-      {/* single question end */}
-      <div className="faq-line"></div>
-      {/* single question */}
-      <div className="question">
-        <h4>درآمدهای متفاوت</h4>
-        <div className="answer">
-          <p>لورم ایپسوم متن ساختگی با</p>
-          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</p>
-        </div>
-      </div>
-      {/* single question end */}
-      <div className="faq-line"></div>
-      {/* single question */}
-      <div className="question">
-        <h4>چه محصولاتی را پیشنهاد می دهید؟</h4>
-        <div className="answer">
-          <p>لورم ایپسوم متن ساختگی با</p>
-          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</p>
-        </div>
-      </div>
-      {/* single question end */}
-    </div>
+
+      <AnimateSharedLayout>
+        {/* single question */}
+        <Toggle title={"چگونه شروع کنم؟"}>
+          <div className="answer">
+            <p>لورم ایپسوم متن ساختگی با</p>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</p>
+          </div>
+        </Toggle>
+        {/* end */}
+
+        {/* single question */}
+        <Toggle title={"برنامه روزانه"}>
+          <div className="answer">
+            <p>لورم ایپسوم متن ساختگی با</p>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</p>
+          </div>
+        </Toggle>
+        {/* end */}
+
+        {/* single question */}
+        <Toggle title={"درآمدهای متفاوت"}>
+          <div className="answer">
+            <p>لورم ایپسوم متن ساختگی با</p>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</p>
+          </div>
+        </Toggle>
+        {/*  end */}
+
+        {/* single question */}
+        <Toggle title={"چه محصولاتی را پیشنهاد می دهید؟"}>
+          <div className="answer">
+            <p>لورم ایپسوم متن ساختگی با</p>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</p>
+          </div>
+        </Toggle>
+        {/*  end */}
+      </AnimateSharedLayout>
+    </motion.div>
   );
 };
 

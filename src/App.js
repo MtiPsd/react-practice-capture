@@ -9,22 +9,31 @@ import Nav from "./components/Nav";
 //Style
 import styles from "./styles/App.scss";
 //Router
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+//Animation
+import { AnimatePresence } from "framer-motion";
 
 function App() {
+  //......................... Use Location...............................
+
+  const location = useLocation();
+
+  //..............................App......................................
+
   return (
     <div className="App">
       <Nav />
+      <AnimatePresence exitBeforeEnter>
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<AboutUs />}></Route>
 
-      <Routes>
-        <Route path="/" element={<AboutUs />}></Route>
+          <Route path="/work" element={<OurWork />}></Route>
 
-        <Route path="/work" element={<OurWork />}></Route>
+          <Route path="/work/:id" element={<MovieDetail />}></Route>
 
-        <Route path="/work/:id" element={<MovieDetail />}></Route>
-
-        <Route path="/contact" element={<ContactUs />}></Route>
-      </Routes>
+          <Route path="/contact" element={<ContactUs />}></Route>
+        </Routes>
+      </AnimatePresence>
     </div>
   );
 }

@@ -5,7 +5,7 @@
 
   h2 {
     padding: 1rem 0rem;
-    color: white;
+    font-weight: bold;
   }
 }
 
@@ -13,8 +13,8 @@
   padding-bottom: 10rem;
 
   .line {
-    height: 0.2rem;
-    background: #ccc;
+    height: 0.3rem;
+    background: rgb(51, 47, 47);
     margin-bottom: 3rem;
   }
 
@@ -24,3 +24,48 @@
     object-fit: cover;
   }
 }
+
+.img-hide {
+  overflow: hidden;
+}
+
+//................... Frames Styles.....................
+
+.frame1 {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100vh;
+  background: rgb(38, 147, 151);
+  z-index: 2;
+}
+.frame2 {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100vh;
+  background: rgb(38, 151, 95);
+  z-index: 2;
+}
+.frame3 {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100vh;
+  background: rgb(151, 38, 76);
+  z-index: 2;
+}
+.frame4 {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100vh;
+  background: rgb(199, 184, 49);
+  z-index: 2;
+}
+
+//................... End..............................

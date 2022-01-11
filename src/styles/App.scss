@@ -60,6 +60,22 @@ li {
   list-style-type: none;
 }
 
+// Customize Scrollbar
+
+::-webkit-scrollbar {
+  width: 18px;
+}
+
+::-webkit-scrollbar-track {
+  background: #282828;
+  border-radius: 2rem;
+}
+::-webkit-scrollbar-thumb {
+  background: #23d99654;
+  border-radius: 2rem;
+}
+
+// Import Styles
 @import "../styles/aboutSection";
 @import "../styles/servicesSection";
 @import "../styles/faqSection";

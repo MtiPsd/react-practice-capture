@@ -4,10 +4,23 @@ import clock from "../img/clock.svg";
 import diaphragm from "../img/diaphragm.svg";
 import teamWork from "../img/teamwork.svg";
 import home2 from "../img/home2.jpg";
+//  animation
+import { motion } from "framer-motion";
+import { scrollReveal } from "../animation";
+import { useScroll } from "./UseScroll";
 
 const ServicesSection = () => {
+  // UseScroll
+  const [element, controls] = useScroll();
+
   return (
-    <div className="services">
+    <motion.div
+      className="services"
+      variants={scrollReveal}
+      ref={element}
+      animate={controls}
+      initial="hidden"
+    >
       {/* discription */}
       <div className="discription">
         <h2>
@@ -56,7 +69,7 @@ const ServicesSection = () => {
       <div className="image">
         <img src={home2} alt="camera" />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
