@@ -7,34 +7,37 @@ const FaqSection = () => {
       {/* single question */}
       <div className="question">
         <h4>چگونه شروع کنم؟</h4>
-        <div className="asnwer">
+        <div className="answer">
           <p>لورم ایپسوم متن ساختگی با</p>
           <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</p>
         </div>
       </div>
       {/* single question end */}
+      <div className="faq-line"></div>
       {/* single question */}
       <div className="question">
         <h4>برنامه روزانه</h4>
-        <div className="asnwer">
+        <div className="answer">
           <p>لورم ایپسوم متن ساختگی با</p>
           <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</p>
         </div>
       </div>
       {/* single question end */}
+      <div className="faq-line"></div>
       {/* single question */}
       <div className="question">
         <h4>درآمدهای متفاوت</h4>
-        <div className="asnwer">
+        <div className="answer">
           <p>لورم ایپسوم متن ساختگی با</p>
           <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</p>
         </div>
       </div>
       {/* single question end */}
+      <div className="faq-line"></div>
       {/* single question */}
       <div className="question">
         <h4>چه محصولاتی را پیشنهاد می دهید؟</h4>
-        <div className="asnwer">
+        <div className="answer">
           <p>لورم ایپسوم متن ساختگی با</p>
           <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</p>
         </div>

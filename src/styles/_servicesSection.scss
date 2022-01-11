@@ -1,0 +1,35 @@
+.services {
+  min-height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 10rem;
+  color: white;
+  h2 {
+    padding-bottom: 5rem;
+  }
+  p {
+    width: 70%;
+    padding: 2rem 0rem 4rem 0rem;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex-basis: 15rem;
+  .icon {
+    display: flex;
+    align-items: center;
+    h3 {
+      padding: 0.6rem;
+      margin-left: 1rem;
+      background: #fff;
+      color: black;
+      border-radius: 2rem;
+    }
+  }
+}

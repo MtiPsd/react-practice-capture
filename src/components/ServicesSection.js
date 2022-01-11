@@ -9,9 +9,9 @@ const ServicesSection = () => {
   return (
     <div className="services">
       {/* discription */}
-      <div className="description">
+      <div className="discription">
         <h2>
-          <span>کیفیت</span>بالای خدمات
+          <span> کیفیت </span> بالای خدمات
         </h2>
         <div className="cards">
           {/* single card */}
@@ -54,7 +54,7 @@ const ServicesSection = () => {
       </div>
       {/* image */}
       <div className="image">
-        <img src={home2} alt="camera picture" />
+        <img src={home2} alt="camera" />
       </div>
     </div>
   );

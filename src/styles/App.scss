@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Mj;
+}
+
+@font-face {
+  font-family: Mj;
+  src: url("../fonts/Samim.woff");
+}
+
+body {
+  background: #1b1b1b;
+  font-family: Mj;
+}
+button {
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0.7rem 1.6rem;
+  border: 2px solid #23d997;
+  background: transparent;
+  color: white;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: #23d997;
+    color: black;
+  }
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: lighter;
+}
+h3 {
+  color: white;
+  font-size: 0.9rem;
+}
+h4 {
+  font-weight: bold;
+}
+span {
+  font-weight: bold;
+  color: #23d997;
+}
+p {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+@import "../styles/aboutSection";
+@import "../styles/servicesSection";
+@import "../styles/faqSection";
+@import "../styles/nav";
+@import "../styles/ourWork";
+@import "../styles/movieDetails";

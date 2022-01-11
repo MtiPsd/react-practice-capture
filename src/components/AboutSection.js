@@ -3,7 +3,7 @@ import home1 from "../img/home1.jpg";
 
 const AboutSection = () => {
   return (
-    <div>
+    <div className="about">
       <div className="discription">
         {/* title */}
         <div className="title">
@@ -28,7 +28,7 @@ const AboutSection = () => {
       </div>
       {/* About image */}
       <div className="image">
-        <img src={home1} alt="landing picture" />
+        <img src={home1} alt="landing" />
       </div>
     </div>
   );
