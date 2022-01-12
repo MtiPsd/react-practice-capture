@@ -14,6 +14,8 @@ import {
   sliderContainer,
 } from "../animation";
 import { useScroll } from "../components/UseScroll";
+//ScrollTop
+import ScrollTop from "../components/ScrollTop";
 
 const OurWork = () => {
   //..................... Use Scroll..............
@@ -85,6 +87,7 @@ const OurWork = () => {
         </Link>
       </motion.div>
       {/* End*/}
+      <ScrollTop />
     </motion.div>
   );
 };

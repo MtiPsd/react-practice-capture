@@ -5,6 +5,7 @@
   align-items: center;
   padding: 0rem 10rem;
   color: white;
+  flex-wrap: wrap;
 }
 .discription {
   flex: 1;
@@ -28,10 +29,6 @@
     height: 80vh;
     object-fit: cover;
   }
-}
-
-.hide {
-  overflow: hidden;
 }
 
 // Wave

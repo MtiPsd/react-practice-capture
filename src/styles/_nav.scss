@@ -6,7 +6,9 @@ nav {
   padding: 1rem 10rem;
   background: #282828;
   align-items: center;
-
+  position: sticky;
+  top: 0;
+  z-index: 10;
   ul {
     display: flex;
     flex: 1;
@@ -26,4 +28,13 @@ nav {
       font-size: 1rem;
     }
   }
+}
+
+.list-line {
+  height: 0.2rem;
+  width: 0%;
+  position: absolute;
+  bottom: -45%;
+  left: -5%;
+  background: #23d997;
 }

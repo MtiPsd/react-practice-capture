@@ -60,6 +60,10 @@ li {
   list-style-type: none;
 }
 
+.hide {
+  overflow: hidden;
+}
+
 // Customize Scrollbar
 
 ::-webkit-scrollbar {
@@ -82,3 +86,4 @@ li {
 @import "../styles/nav";
 @import "../styles/ourWork";
 @import "../styles/movieDetails";
+@import "../styles/contactUs";
