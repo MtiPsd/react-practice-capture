@@ -79,6 +79,12 @@ li {
   border-radius: 2rem;
 }
 
+@media screen and (max-width: 1361px) {
+  html {
+    font-size: 80.5%;
+  }
+}
+
 // Import Styles
 @import "../styles/aboutSection";
 @import "../styles/servicesSection";

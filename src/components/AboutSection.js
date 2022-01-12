@@ -6,10 +6,11 @@ import { titleAnim, fade, photoAnim } from "../animation";
 import Wave from "./Wave";
 
 const AboutSection = () => {
-  // Framer Motion
-
+  //.....................................App.........................................
   return (
     <div className="about">
+      {/*............................. descrption.............................. */}
+
       <div className="discription">
         {/* title */}
         <motion.div className="title">
@@ -32,11 +33,22 @@ const AboutSection = () => {
         </motion.p>
         <motion.button variants={fade}>تماس با ما</motion.button>
       </div>
-      {/* About image */}
+
+      {/*............................. end.............................. */}
+
+      {/*.......................... About image............................. */}
+
       <div className="image">
         <motion.img src={home1} alt="landing" variants={photoAnim} />
       </div>
+
+      {/*.......................... end............................. */}
+
+      {/*.......................... Wave............................. */}
+
       <Wave />
+
+      {/*.......................... end............................. */}
     </div>
   );
 };

@@ -37,4 +37,30 @@
   position: absolute;
   left: 0;
   z-index: 1;
+  display: none;
+}
+
+@media screen and (max-width: 1361px) {
+  .image {
+    width: 50%;
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 997px) {
+  .about {
+    display: block;
+    .discription {
+      text-align: center;
+      margin: 3rem;
+    }
+    .image {
+      margin-left: 12rem;
+      width: 50%;
+      img {
+        width: 100%;
+        height: 30vh;
+      }
+    }
+  }
 }

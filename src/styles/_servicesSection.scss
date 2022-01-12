@@ -5,6 +5,7 @@
   align-items: center;
   padding: 5rem 10rem;
   color: white;
+
   h2 {
     padding-bottom: 5rem;
   }
@@ -31,5 +32,20 @@
       color: black;
       border-radius: 2rem;
     }
+  }
+}
+
+@media screen and (max-width: 997px) {
+  .card {
+    flex-basis: 10rem;
+    h3 {
+      padding: 2rem;
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 441px) {
+  .services {
+    padding: 1rem 1rem;
   }
 }
